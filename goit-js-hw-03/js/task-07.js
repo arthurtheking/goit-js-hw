@@ -43,17 +43,17 @@ const account = {
     for (let transaction of this.transactions) {
       if (transaction.type === type) {
         total += transaction.amount;
-      }
-    }
+      };
+    };
     return `Total transaction amount of transaction type ${type} is: ${total}`;
   },
   getTransactionDetails(id) {
     for (let transaction of this.transactions) {
       if (transaction.id === id) {
         return transaction;
-      }
-    }
-  }
+      };
+    };
+  },
 };
 
 console.log(account.deposit(700));

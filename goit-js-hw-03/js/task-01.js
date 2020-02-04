@@ -11,8 +11,12 @@ user.mood = "happy";
 user.hobby = "skydiving";
 user.premium = false;
 
-const entries = Object.entries(user);
+const cullUser = (user) => {
+  const keys = Object.keys(user);
+  for(let key of keys) {
+    console.log(`${key}: ${user[key]}`)
+  }
+}
 
-for (let i of entries) {
-  console.log(`${i[0]}: ${i[1]}`);
-};
+
+cullUser(user);
