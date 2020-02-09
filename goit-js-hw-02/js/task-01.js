@@ -1,7 +1,7 @@
 "Use strict";
 
 const logItems = function(array) {
-  for (item of array) {
+  for (let item of array) {
     if (array.includes(item)) {
       console.log(`${array.indexOf(item) + 1}: ${item}`);
     }
